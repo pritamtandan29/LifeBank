@@ -47,7 +47,8 @@ function BloodAvailability() {
   };
 
   return (
-    <section className="max-w-7xl mx-auto px-6 py-24">
+    <div className="mt-0 mb-0 border-t border-gray-700 bg-black">
+    <section className="max-w-7xl mx-auto px-6 py-24  ">
 
       {/* Heading */}
       <div className="mb-12">
@@ -96,9 +97,9 @@ function BloodAvailability() {
           <span className="w-3 h-3 rounded-full bg-red-500"></span>
           Critical (&lt;20 units)
         </div>
-
       </div>
     </section>
+    </div>
   );
 }
 

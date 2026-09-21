@@ -1,11 +1,18 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
+const cors = require("cors");
 
 dotenv.config();
 connectDB();
 
 const app = express();
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 app.use("/api/donors", require("./routes/donorRoutes"));
@@ -13,6 +20,8 @@ app.use("/api/inventory", require("./routes/inventoryRoutes"));
 app.use("/api/requests", require("./routes/requestRoutes"));
 app.use("/api/dashboard", require("./routes/dashboardRoutes"));
 app.use("/api/auth", require("./routes/authRoutes"));
+app.use("/api/donor-dashboard", require("./routes/dashboardRoutes"));
+app.use("/api/donations", require("./routes/donationRoutes"));
 
 app.get('/', (req, res) => {
   res.send('🩸 Blood Bank API running');

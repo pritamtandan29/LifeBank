@@ -1,9 +1,7 @@
 import Navbar from "../../components/Navbar/Navbar";
 import Hero from "./components/Hero";
-import Stats from "./components/Stats";
 import BloodAvailability from "./components/BloodAvailability";
 import EmergencyRequest from "./components/EmergencyRequest";
-import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 
@@ -14,8 +12,6 @@ function Landing() {
       <Hero />
       <BloodAvailability />
       <EmergencyRequest />
-      <Stats />
-      <Testimonials />
       <FAQ />
       <Footer />
     </div>

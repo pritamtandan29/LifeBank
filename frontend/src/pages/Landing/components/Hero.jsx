@@ -1,7 +1,7 @@
 import { Users, Droplets, Building2, Heart } from "lucide-react";
 function Hero() {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-24">
+    <section className="max-w-7xl mx-auto px-6 py-24 ">
       <div className="grid md:grid-cols-2 gap-10 items-center">
         <div>
           <span className="bg-red-900 text-red-300 px-4 py-2 rounded-full">
@@ -86,7 +86,8 @@ function Hero() {
         </div>
 
       </div>
-      <hr className="text-gray-400 mt-10"></hr>
+
+    
     </section>
   );
 }
