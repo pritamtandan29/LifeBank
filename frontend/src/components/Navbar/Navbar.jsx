@@ -14,6 +14,7 @@ function Navbar() {
               <Droplets size={15} className="text-white" />
             </div>
 
+
             <h1 className="text-xl font-semibold text-white">LifeBank</h1>
           </div>
 
